@@ -13,7 +13,7 @@ import javax.inject.Singleton;
 public class AppModule {
     private Application mApplication;
 
-    AppModule(Application mApplication) {
+    public AppModule(Application mApplication) {
         this.mApplication = mApplication;
     }
 
