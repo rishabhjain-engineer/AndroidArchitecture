@@ -21,6 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by android1 on 19/2/18.
  */
 
+@Module
 public class ApiModule {
 
     String mBaseUrl;
