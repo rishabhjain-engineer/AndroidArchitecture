@@ -1,4 +1,4 @@
-package reloaded.sciontra.hs.com.sciontrareloaded;
+package reloaded.sciontra.hs.com.sciontrareloaded.application;
 
 import android.app.Application;
 
