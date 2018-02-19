@@ -1,4 +1,4 @@
-package dagger;
+package Application;
 
 import android.app.Application;
 
@@ -7,6 +7,7 @@ import com.squareup.leakcanary.LeakCanary;
 import dagger.ApiComponent;
 import dagger.ApiModule;
 import dagger.AppModule;
+import dagger.DaggerApiComponent;
 
 /**
  * Created by rishabh on 19/2/18.
@@ -25,7 +26,6 @@ public class SciontraReloadedApplication extends Application {
             return;
         }
         LeakCanary.install(this);
-        mApiComponent = DaggerApiComponent.builder().appModule(new AppModule(this)).apiModule(new ApiModule("https://simplifiedcoding.net/demos/")).build();
     }
 
     public ApiComponent getNetComponent() {
